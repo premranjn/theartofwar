@@ -1,0 +1,150 @@
+body {
+    flex-direction: column;
+   align-items: center; 
+}
+#landing-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+
+}
+#my-name {
+    font-size: 70px;
+    margin-top: -7%;
+    text-decoration: none;
+    color: black;
+}
+
+#tag-line {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Add margin to create space between my-name and tag-line */
+}
+
+#projects {
+    font-size: 22px;
+    margin-bottom: 10px;
+    /* Add margin to create space between projects and reachout */
+}
+
+#reachout-button {
+    font-size: 22px;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+#projects-and-reach-out {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8%;
+    width: 15%;
+    /* Adjust the width as needed */
+}
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; /*top and bottom   */
+    height: 100vh;
+}
+
+#reach-out{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; /*top and bottom   */
+    height: 100vh;
+}
+
+#my-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; /*top and bottom   */
+    height: 100vh;
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    z-index: 1;
+}
+
+#my-projects a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Set display to inline-block to place anchors in the same line */
+    margin-right: 10px; /* Add some spacing between anchors */
+}
+
+#project-links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.3%;
+    margin-bottom: 0.5%;
+    width: 5%;
+}
+
+textarea{
+    margin-top: 10%;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    #my-name {
+        font-size: 36px;
+    }
+
+    #tag-line {
+        font-size: 14px;
+    }
+
+    #projects,
+    #reachout-button {
+        font-size: 16px;
+    }
+
+    #projects-and-reach-out,
+    #project-links,
+    #my-projects,
+    #reach-out {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    #my-projects a,
+    #project-links a {
+        margin-bottom: 5px; /* Adjust spacing for smaller screens */
+    }
+
+    textarea {
+        margin-top: 5px; /* Adjust margin for textarea on smaller screens */
+    }
+}
+@media only screen and (max-width: 600px) {
+    #projects-and-reach-out {
+        display: flex;
+        flex-direction: column; /* Stack the links vertically on smaller screens */
+
+        justify-content: center;
+        
+    }
+
+    #project-links a,
+    #my-projects a {
+        margin-bottom: 5px; /* Adjust spacing for smaller screens */
+    }
+
+    textarea {
+        margin-top: 5px; /* Adjust margin for textarea on smaller screens */
+    }
+}
