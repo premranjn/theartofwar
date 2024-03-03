@@ -1,8 +1,8 @@
 
 console.log("Hello");
 
- // Smooth scrolling function
- function smoothScroll(targetId) {
+// Smooth scrolling function
+function smoothScroll(targetId) {
     var targetElement = document.getElementById(targetId);
     targetElement.scrollIntoView({
         behavior: 'smooth'
