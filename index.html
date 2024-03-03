@@ -41,10 +41,12 @@
     </div>
     <div id="reach-out">
         <a id="my-name">reach out</a>
-        <form action="">
-            <textarea rows="13" cols="30" placeholder="  Responses within 24 hours"></textarea>
-            <button>Send</button>
+        <form action="https://api.sheetmonkey.io/form/euEvQU84wnaPPmGkzvYKiJ" method="post" onsubmit="setDateTime()">
+            <textarea name="response" rows="13" cols="30" placeholder="Responses within 24 hours"></textarea>
+            <input type="hidden" name="Created" id="createdDateTime" />
+            <input type="submit" value="send">
         </form>
+        
     </div>
 
     <script src="script.js"></script>

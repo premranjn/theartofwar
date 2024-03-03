@@ -21,3 +21,9 @@ document.getElementById('projects').addEventListener('click', function (e) {
     e.preventDefault(); // Prevent default link behavior
     smoothScroll('my-projects');
 });
+
+function setDateTime() {
+    var createdField = document.getElementById("createdDateTime");
+    var currentDate = new Date().toISOString(); // Get current date and time in ISO format
+    createdField.value = currentDate;
+}
