@@ -25,29 +25,32 @@
     <div id="my-projects">
         <a id="my-name">projects</a>
         <p id="tag-line"><b>ClassHub Connect: Pin Based FileBridge </b>MERN (MongoDB, Express.js, React, Node.js)
-            stack-based Pin-enabled File-sharingSystem for classrooms. <br> Enabling teachers to add students, share files with specific classes or groups,
+            stack-based Pin-enabled File-sharingSystem for classrooms. <br> Enabling teachers to add students, share
+            files with specific classes or groups,
             and facilitated secure file exchanges <br>using unique pins fostering collaborative learning.</p>
         <div id="project-links">
             <a href="https://github.com/premranjn/FileSharingSystem" target="_blank"> <u>Link</u></a>
-            <a > <u>Docs</u></a>
+            <a> <u>Docs</u></a>
         </div>
 
         <p id="tag-line"><b>Cineverse: A MetaVerse for Cinema</b>
             incorporates a virtual cinema hall, customizable sets for live performances, and social
-            interaction features for <br>   an immersive entertainment experience.</p>
+            interaction features for <br> an immersive entertainment experience.</p>
         <div id="project-links">
             <a href="https://github.com/premranjn/NITTroCineverse.git" target="_blank"> <u>Link</u></a>
-            <a > <u>Docs</u></a>
+            <a> <u>Docs</u></a>
         </div>
 
         <p id="tag-line"><b>decor3d.in</b>
-            Designed and developed a responsive landing page for decor3d.in, an emerging e-commerce startup specializing in 3D decor. 
+            Designed and developed a responsive landing page for decor3d.in, an emerging e-commerce startup specializing
+            in 3D decor.
             The landing page <br> aimed to provide a visually appealing and user-friendly introduction to the brand,
-            showcasing its <br> unique products and engaging potential customers. Additionally, implemented a  backend architecture for seamless order placement.
-</p>
+            showcasing its <br> unique products and engaging potential customers. Additionally, implemented a backend
+            architecture for seamless order placement.
+        </p>
         <div id="project-links">
             <a href="https://decor3d.in" target="_blank"> <u>Link</u></a>
-            <a > <u>Docs</u></a>
+            <a> <u>Docs</u></a>
         </div>
     </div>
     <div id="reach-out">
@@ -57,10 +60,45 @@
             <input type="hidden" name="Created" id="createdDateTime" />
             <input type="submit" value="send">
         </form>
-        
+
     </div>
 
-    <script src="/script.js"></script>
+    <script>
+
+        console.log("Hello");
+
+        // Smooth scrolling function
+        function smoothScroll(targetId) {
+            var targetElement = document.getElementById(targetId);
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Add event listener to the link
+        document.getElementById('my-name').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default link behavior
+            smoothScroll('about-me');
+        });
+
+        document.getElementById('reachout-button').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default link behavior
+            smoothScroll('reach-out');
+        });
+
+        document.getElementById('projects').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default link behavior
+            smoothScroll('my-projects');
+        });
+
+        function setDateTime() {
+            var createdField = document.getElementById("createdDateTime");
+            var currentDate = new Date().toISOString(); // Get current date and time in ISO format
+            createdField.value = currentDate;
+        }
+
+
+    </script>
 </body>
 
 </html>
