@@ -9,10 +9,10 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/index.html");
 });
 
-app.get('/get', (req, res) => {
-    const filePath = __dirname + '/public/tomcat.zip';
-    res.download(filePath, 'tomcat.zip');
-});
+// app.get('/get', (req, res) => {
+//     const filePath = __dirname + '/public/tomcat.zip';
+//     res.download(filePath, 'ZIP.zip');
+// });
 
 app.listen(process.env.PORT || 3000, function(){
     console.log("Server is Up and Running on port: 3000");
